@@ -1,4 +1,4 @@
-# EstudoRecursao
+# Recursividade
 📚 Minha visão sobre a técnica de recursividade na progamação
 
 ### Minha Definição:
@@ -18,7 +18,7 @@ utilizando o exemplo de cálculo de fatorial, é possivel ver a recursividade di
 ~~~
 ###### codigo 1
 
-Note que na estrutura de condição `else` da função `fatorial` é passada a própia função. [Clique aqui para entender este funcionamento](#como-funciona).
+Note que na estrutura de condição `else` da função `fatorial` é passada a própia função.
 
 O outro tipo de função recursiva é a **recursividade indireta**, onde, a função recursiva é chamada a partir de outra função. Exemplo:
 ~~~Python
