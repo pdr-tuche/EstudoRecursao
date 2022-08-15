@@ -1,4 +1,4 @@
-# Recursividade
+# Recursividade (em desenvolvimento)
 📚 Minha visão sobre a técnica de recursividade na progamação
 
 ### Minha Definição:
@@ -60,7 +60,9 @@ Após chegar ao caso base, a função recursiva irá resolver os casos intermedi
 ![Recursividade](./ReadmeImages/RetornoDasSimplificações.png)
 
 ### Porque usar a recursividade ?
-Como dito anteriormente, a recursividade funciona como se fosse uma estrutura de repetição. Algumas vezes a implementação recursiva pode ser "convertida" em iterativa. Veja esse exemplo da utilização da estrutura de repetição `while` na resolução do mesmo problema:
+Como dito anteriormente, a recursividade funciona como se fosse uma estrutura de repetição. **Há casos onde a solução iterativa é difícil de se obter ou tem desempenho inferior à recursiva**, nestes casos utiliza-se a recursividade. No entanto, sempre que possível deve-se optar por uma solução não recursiva, visto que, a recursividade abre mão do desempenho devido as 'N' chamadas de si própia, assim, gastando mais processamento e quantidade de memória principal.
+
+Algumas vezes a implementação recursiva pode ser "convertida" em iterativa. Veja esse exemplo da utilização da estrutura de repetição `while` na resolução do mesmo problema:
 ~~~Python
 def fatorial(n):
     fatorial = 1
@@ -75,8 +77,9 @@ numero = int(input("digite um numero para saber seu fatorial: "))
 print(fatorial(numero))
 ~~~
 
-Muita das vezes a otimização de códigos é feita diminuindo a complexidade de seus algoritimos, neste caso, a recursividade substitui a complexidade dos laços para que haja mais perfomance de processamento e memória.
+Muita das vezes a otimização de códigos é feita diminuindo a complexidade de seus algoritimos, neste caso, a estrutura de repetição substitui a recursão para que haja mais perfomance de processamento e memória.
 
-No entanto, códigos com recursividade são de difícil entendimento, assim causando dificuldades em manutenção de código. 
+### Testes de performance:
 
-há casos onde a solução iterativa é difícil de se obter ou tem desempenho inferior à recursiva. Porém, sempre que possível deve-se optar por uma solução não recursiva.
+<p>É possivel verificar o script de teste clicando <a href="./python/tests/test.py">aqui.</a></p>
+nos testes foi utilizado o tempo de execução de cada
